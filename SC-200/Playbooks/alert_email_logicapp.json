@@ -1,0 +1,17 @@
+{
+  "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {},
+  "triggers": {},
+  "actions": {
+    "Send_email_on_alert": {
+      "type": "ApiConnection",
+      "inputs": {
+        "path": "/v2/Mail",
+        "method": "post",
+        "body": {"subject": "Sentinel Alert", "body": "Placeholder", "to": "you@example.com"}
+      }
+    }
+  },
+  "outputs": {}
+}

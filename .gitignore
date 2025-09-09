@@ -1,0 +1,15 @@
+.DS_Store
+Thumbs.db
+*.log
+__pycache__/
+*.pyc
+*.pyo
+.env
+venv/
+.envrc
+~$*.pptx
+~$*.docx
+*.zip
+*.gz
+*.7z
+**/Screenshots/*

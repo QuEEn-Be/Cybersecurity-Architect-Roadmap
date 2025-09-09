@@ -1,0 +1,5 @@
+// Failed sign-ins by user (last 24h)
+SigninLogs
+| where TimeGenerated > ago(24h)
+| summarize FailedCount = count() by UserPrincipalName
+| order by FailedCount desc
